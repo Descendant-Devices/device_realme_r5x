@@ -148,6 +148,10 @@ PRODUCT_COPY_FILES += \
 TARGET_FACE_UNLOCK_SUPPORT := YES
 TARGET_SUPPORTS_BLUR := true
 
+# Dirac
+PRODUCT_PACKAGES += \
+    KharaMeDirac
+
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
