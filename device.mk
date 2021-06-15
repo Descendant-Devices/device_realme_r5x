@@ -143,6 +143,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml \
     $(LOCAL_PATH)/configs/component-overrides-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/component-overrides.xml
 
+# Descendant
+TARGET_FACE_UNLOCK_SUPPORT := YES
+TARGET_SUPPORTS_BLUR := true
+
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
@@ -353,6 +357,10 @@ PRODUCT_PACKAGES += \
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
+# QCOM
+PRODUCT_BOARD_PLATFORM := trinket
+PRODUCT_USES_QCOM_HARDWARE := true
 
 # QMI
 PRODUCT_PACKAGES += \
